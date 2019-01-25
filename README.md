@@ -2,7 +2,7 @@
 
 # ssm_demo
 
-> 本项目用集成SSM框架
+> 集成SSM框架[ING]
 
 ---
 
@@ -14,7 +14,7 @@
 
 + Maven 3.6
 
-> ### 主要涉及知识点
+> ### 技术点
 
 + Maven
 
@@ -25,5 +25,3 @@
 + Mybatis
 
 + MyBatis Generator
-
-<p align="right">学而不思则罔，思而不学则殆。</p>
