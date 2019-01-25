@@ -2,6 +2,6 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis-3-config" "mybatis-3-config.dtd" >
 <configuration>
 	<typeAliases>
-		<package name="com.test.bean"/>
+		<package name="com.template.bean"/>
 	</typeAliases>
 </configuration>
