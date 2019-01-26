@@ -4,33 +4,38 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>index</title>
+<title>Template</title>
+<link rel="stylesheet" href="static/css/style.min.css">
+<link rel="stylesheet" href="static/css/iconfont/iconfont.css">
 </head>
-<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="static/js/Request.js"></script> -->
 <body>
-	<!-- 	<a href="test/page?page=Hello World">
-		<Button>click me</Button>
-	</a>
-
-	<form method="post" action="test/value">
-		<input type="text" name="value" /> <input type="submit"
-			value="click me by form" />
-	</form>
-
-	<button onClick="toAjax()">click me by ajax</button>
-
-	<table border="1">
-		<thead>
-			<tr>
-				<th>ID</th>
-				<th>Name</th>
-			</tr>
-		</thead>
-		<tbody class="tbody">
-			
-		</tbody>
-	</table> -->
-	<h1>Hello World</h1>
+	<div class="maxBox">
+		<div class="box">
+			<!-- 标题 -->
+			<div class="titleBox">
+				<p class="font1">SSM Template</p>
+			</div>
+			<!-- 描述 -->
+			<div class="contentBox">
+				<div class="inputBox">
+				
+				</div>
+			</div>
+			<!-- github地址 -->
+			<div class="hrefGit">
+				<span class="icon-ssm icon-githublogo"></span> <a class="font3">
+					GitHub: <a class="font3" target="_bank"
+					href="https://github.com/Xeelong/ssm_template">https://github.com/Xeelong/ssm_template</a>
+				</a>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="static/js/Request.js"></script>
+	<script>
+		$(function() {
+			initPage();
+		})
+	</script>
 </body>
 </html>

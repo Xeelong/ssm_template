@@ -1,20 +1,30 @@
 /**
- * 使用ajax请求数据，并构造表格
- * 
+ * 查询数据，渲染页面
+ * <!-- 添加数据 -->
+				<!-- <input type="text" class="inputText" placeholder="向数据库添加数据" maxlength="10" />
+                    <a class="btn"> <span class="icon-ssm icon-new"></span> </a> -->
+				<!-- 删除或修改数据 -->
+				<!-- <a class="showFont">啊啊啊啊啊啊啊啊啊啊</a>
+                    <a class="btn"><span class="icon-ssm icon-xiugai"></span></a>
+                    <a class="btn"><span class="icon-ssm icon-shanchu"></span></a> -->
+				<!-- 修改数据 -->
+				<div class="inputBox">
+					<input type="text" class="inputText" placeholder="修改数据"
+						maxlength="10" /> <a class="btn"> <span
+						class="icon-ssm icon-icon--yes"></span></a>
+				</div>
  * @returns
  */
-function toAjax() {
-	$(".tbody").empty();
-	$.post("test/form", {}, function(param) {
-		$.each(param.returnData.data, function(index, item) {// 第一个参数是当前索引，第二个是对象
-			var td_id = $("<td>" + item.id + "</td>");
-			var td_name = $("<td>" + item.name + "</td>");
-			var tr = $("<tr></tr>").append(td_id).append(td_name).appendTo(
-					".tbody");
-		})
+function initPage() {
+	$.post("init/select", function(param) {
+		var data = param.returnData.data;
+		if( data !== null){
+			var showBox = $("<a>"+data.initContent+"</a>").addClass("showFont");
+			var showBtn1 = $("<a></a>").addClass("btn");
+			var showBtn2 = $("<a></a>").addClass("btn");
+			var icon1 = $("<span></span>").addClass("icon-ssm icon-xiugai").appendTo(showBtn1);
+			var icon2 = $("<span></span>").addClass("icon-ssm icon-shanchu").appendTo(showBtn2);
+			$(".inputBox").append(showBox).append(showBtn1).append(showBtn2)
+		}
 	});
-	/*
-	 * $.ajax({ url : "test/form", type : "POST", data : { data : name },
-	 * success : function() { alert("aa"); }, })
-	 */
 }
