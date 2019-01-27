@@ -1,6 +1,6 @@
 ![](src/main/webapp/static/image/readme.png)
 
-# ssm_demo
+# ssm_template
 
 > 集成SSM框架[ING]
 
