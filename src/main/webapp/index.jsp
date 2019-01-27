@@ -31,6 +31,7 @@
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="static/js/jquery.cookie.js"></script>
 	<script src="static/js/Request.js"></script>
 	<script>
 		$(function() {
