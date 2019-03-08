@@ -2,7 +2,7 @@
 
 # ssm_template
 
-> 集成SSM框架[ING]
+> 集成SSM框架
 
 ---
 
